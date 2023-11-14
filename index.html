@@ -28,11 +28,11 @@
                 <div class="header__menu">
                     <nav class="nav header__nav">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="#" class="nav__link">Функции</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Преимущества</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Тарифы</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link nav__link--mobile">VKontakte</a></li>
+                            <li class="nav__item"><a href="#functions" class="nav__link">Функции</a></li>
+                            <li class="nav__item"><a href="#new-level" class="nav__link">Преимущества</a></li>
+                            <li class="nav__item"><a href="#use-case" class="nav__link">Тарифы</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                            <li class="nav__item"><a href="#" target="_blank" class="nav__link nav__link--mobile">VKontakte</a></li>
                         </ul>
                     </nav>
                     <div class="header__contacts">
@@ -82,7 +82,7 @@
         </div>
 
         <!-- functions -->
-		<section class="functions">
+		<section id="functions" class="functions">
             <div class="container-small">
                 <h2 class="title functions__title">Основные функции <br> приложения</h2>
                 <div class="functions__body">
@@ -142,7 +142,7 @@
         </section>
 
         <!-- new-level -->
-		<section class="new-level">
+		<section id="new-level" class="new-level">
             <div class="container-min">
                 <h2 class="title title--colors new-level__title"><span>Охота</span> на новом уровне</h2>
                 <div class="new-level__items">
@@ -190,7 +190,7 @@
         </section>
 
         <!-- use-case -->
-		<section class="use-case">
+		<section id="use-case" class="use-case">
             <div class="container-min">
                 <h2 class="title title--white use-case__title">Варианты использования</h2>
                 <div class="use-case__body">
@@ -219,7 +219,7 @@
         </section>
         
         <!-- about -->
-		<div class="about">
+		<div id="about" class="about">
             <div class="container-min">
                 <div class="about__text">
                     <p>Карта охотника была задумана и создавалась охотниками для охотников. За годы, проведенные с ружьем в полях и лесах, мы поняли, чего не хватает смартфону, чтобы стать помощником на охоте.</p>
@@ -250,6 +250,36 @@
                 </div>
             </div>
         </div>
+
+        <!-- download-free -->
+        <div class="download-free">
+            <div class="container download-free__container">
+                <div class="download-free__title">Скачать бесплатно <i class="icon-arright"></i></div>
+                <ul class="download-free__list">
+                    <li class="download-free__item">
+                        <a href="#" target="_blank">
+                            <img src="image/icons/google.png" alt="Доступно в Google Play">
+                        </a>
+                    </li>
+                    <li class="download-free__item">
+                        <a href="#" target="_blank">
+                            <img src="image/icons/appstore.png" alt="Загрузите в App Store">
+                        </a>
+                    </li>
+                    <li class="download-free__item">
+                        <a href="#" target="_blank">
+                            <img src="image/icons/rustore.png" alt="Скачайте из RuStore">
+                        </a>
+                    </li>
+                    <li class="download-free__item download-free__item--white">
+                        <a href="#" target="_blank">
+                            <img src="image/icons/appgallery.png" alt="Откройте в AppGallery">
+                        </a>
+                    </li>
+                </ul>
+                <button class="download-free__btn js-open-popup"  data-popup-name="popup-download">Скачать бесплатно</button>
+            </div>
+        </div>
 	</main>
 
     <footer class="footer">
@@ -277,34 +307,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="container footer__bottom-container">
-                <div class="footer__bottom-title">Скачать бесплатно <i class="icon-arright"></i></div>
-                <ul class="footer__bottom-list">
-                    <li class="footer__bottom-item">
-                        <a href="#" target="_blank">
-                            <img src="image/icons/google.png" alt="Доступно в Google Play">
-                        </a>
-                    </li>
-                    <li class="footer__bottom-item">
-                        <a href="#" target="_blank">
-                            <img src="image/icons/appstore.png" alt="Загрузите в App Store">
-                        </a>
-                    </li>
-                    <li class="footer__bottom-item">
-                        <a href="#" target="_blank">
-                            <img src="image/icons/rustore.png" alt="Скачайте из RuStore">
-                        </a>
-                    </li>
-                    <li class="footer__bottom-item footer__bottom-item--white">
-                        <a href="#" target="_blank">
-                            <img src="image/icons/appgallery.png" alt="Откройте в AppGallery">
-                        </a>
-                    </li>
-                </ul>
-                <button class="footer__bottom-btn js-open-popup"  data-popup-name="popup-download">Скачать бесплатно</button>
             </div>
         </div>
     </footer>

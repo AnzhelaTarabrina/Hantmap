@@ -4,6 +4,7 @@ const menuBody = document.querySelector(".header__menu");
 if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
         menuBody.classList.toggle('open');
+        document.body.classList.toggle('body--lock');
     })
 }
 
@@ -14,7 +15,11 @@ window.onload = function () {
       const targetElement = e.target;
       if (!targetElement.closest('.header') && document.querySelector('.header__menu.open')) {
           document.querySelector('.header__menu').classList.remove('open');
-      }
+      };
+      if (targetElement.closest('.nav__item') && document.querySelector('.header__menu.open')) {
+          document.querySelector('.header__menu').classList.remove('open');
+          document.body.classList.remove('body--lock');
+      };
   }
 }
 
